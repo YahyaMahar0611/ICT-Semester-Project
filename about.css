@@ -1,0 +1,69 @@
+body {
+    font-family: 'Times New Roman';
+    margin: 0;
+    padding: 0;
+    background: #000000;
+}
+
+.header {
+    background: #ff0000;
+    color: #ffffff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.nav a.active {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.about-section {
+    background: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ff0000;
+    color: #ffffff;
+}
+
+h2 {
+    margin-top: 0;
+    color: #ff0000;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.team-member {
+    background: #cc0000;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.footer {
+    background: #cc0000;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}

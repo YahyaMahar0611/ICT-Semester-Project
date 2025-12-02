@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVATHRON - Login/Sign-in</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">MOVATHRON</div>
+        <div class="tab-buttons">
+            <button id="loginTab" class="tab-btn active">Login</button>
+            <button id="signinTab" class="tab-btn">Sign-in</button>
+        </div>
+        <div class="data-info">
+        
+        </div>
+    </header>
+
+<div class="form-container">
+    <form id="loginForm" class="form active">
+        <h2>Login</h2>
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" placeholder="Enter your email" required>
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" placeholder="Enter password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <form id="signinForm" class="form">
+        <h2>Sign-in</h2>
+        <label for="signinEmail">Email</label>
+        <input type="email" id="signinEmail" placeholder="Enter your email" required>
+        <label for="signinPassword">Password</label>
+        <input type="password" id="signinPassword" placeholder="Enter password" required>
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Re-enter password" required>
+
+        <label>Gender</label>
+        <div class="gender-options">
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female" required> Female</label>
+            <label><input type="radio" name="gender" value="other" required> Other</label>
+        </div>
+
+        <label>Subscription Plan</label>
+        <select id="subscription" required>
+            <option value="">Select Plan</option>
+            <option value="weekly">Weekly: RS 300</option>
+            <option value="monthly">Monthly: RS 1000</option>
+            <option value="yearly">Yearly: RS 5500</option>
+        </select>
+
+        <button type="submit">Sign-in</button>
+    </form>
+</div>
+
+<script src="login.js"></script>
+
+</body>
+</html>

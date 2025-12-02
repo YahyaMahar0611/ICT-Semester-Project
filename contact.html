@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MOVATHRON</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">MOVATHRON</div>
+        <nav class="nav">
+            <a href="movathron.html">Home</a>
+           
+        </nav>
+    </header>
+
+
+<main>
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="suggestion">Your Suggestion:</label>
+            <textarea id="suggestion" placeholder="Write your suggestion here" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="add-movie-section">
+        <h2>Add New Movie/Anime/Season</h2>
+        <form id="movieForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name" required>
+
+            <label for="category">Category:</label>
+            <select id="category" required>
+                <option value="">Select Category</option>
+                <option value="Movie">Movie</option>
+                <option value="Anime">Anime</option>
+                <option value="Season">Season</option>
+                <option value="Drama">Drama</option>
+            </select>
+
+            <button type="submit">Add</button>
+        </form>
+
+        <div id="addedMovies" class="movie-grid"></div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>Developed by <strong>TEAM MOVATHRON</strong></p>
+</footer>
+
+<script src="contact.js"></script>
+
+
+</body>
+
+</html>
